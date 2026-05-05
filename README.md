@@ -11,20 +11,20 @@ En palabras simples, el dominio debería funcionar por sí solo, sin importar c�
 
 ## EXPLICACIÓN DE CARPETAS
 
-### * domain/
+- **domain/**
 La carpeta domain contiene la parte principal del sistema.
 En este caso, ahí está el archivo `holaDominio.js`, que se encarga de definir el mensaje que se va a mostrar.
 Esta capa sería la más interna de la arquitectura, por lo mismo no debería depender de las otras carpetas.
 
-### -application/
+- **application/**
 La carpeta application contiene la lógica que conecta el dominio con el resto del programa.
 En este proyecto, el archivo `holaApp.js` toma el mensaje definido en el dominio y lo prepara para que pueda ser usado por la interfaz.
 
-### -interfaces/
+- **interfaces/**
 La carpeta interfaces representa la parte que se comunica con el exterior.
 En este caso, `holaInterfaz.js` recibe el resultado desde la capa de aplicación y lo muestra por consola.
 
-### -index.js
+- **index.js**
 El archivo `index.js` es el archivo principal del proyecto.
 Desde aquí parte la ejecución del programa y se llama a la interfaz para que se muestre el mensaje final.
 
