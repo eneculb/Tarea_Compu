@@ -1,5 +1,5 @@
 # TAREA 2 - Clean Architecture en Node.js
-Este proyecto corresponde a una aplicación básica desarrollada en Node.js, organizada con una estructura inspirada en el patrón de diseño Clean Architecture o Arquitectura Limpia.
+Este proyecto corresponde a una aplicación básica desarrollada en Node.js, organizada con una estructura inspirada en el patrón de diseño `Clean Architecture` o Arquitectura Limpia.
 La gracia de esta arquitectura es separar el proyecto por responsabilidades, para que no quede todo mezclado en un solo archivo.
 La aplicación ejecuta un mensaje simple de “Hola Mundo”, pero separando el código en distintas capas para mostrar cómo se puede ordenar un proyecto de forma más limpia y mantenible.
 
@@ -13,19 +13,19 @@ En palabras simples, el dominio debería funcionar por sí solo, sin importar c�
 
 ### - domain/
 La carpeta domain contiene la parte principal del sistema.
-En este caso, ahí está el archivo holaDominio.js, que se encarga de definir el mensaje que se va a mostrar.
+En este caso, ahí está el archivo `holaDominio.js`, que se encarga de definir el mensaje que se va a mostrar.
 Esta capa sería la más interna de la arquitectura, por lo mismo no debería depender de las otras carpetas.
 
 ### -application/
 La carpeta application contiene la lógica que conecta el dominio con el resto del programa.
-En este proyecto, el archivo holaApp.js toma el mensaje definido en el dominio y lo prepara para que pueda ser usado por la interfaz.
+En este proyecto, el archivo `holaApp.js` toma el mensaje definido en el dominio y lo prepara para que pueda ser usado por la interfaz.
 
 ### -interfaces/
 La carpeta interfaces representa la parte que se comunica con el exterior.
-En este caso, holaInterfaz.js recibe el resultado desde la capa de aplicación y lo muestra por consola.
+En este caso, `holaInterfaz.js` recibe el resultado desde la capa de aplicación y lo muestra por consola.
 
 ### -index.js
-El archivo index.js es el archivo principal del proyecto.
+El archivo `index.js` es el archivo principal del proyecto.
 Desde aquí parte la ejecución del programa y se llama a la interfaz para que se muestre el mensaje final.
 
 ## FLUJO DE EJECUCIÓN
@@ -40,12 +40,12 @@ Por ejemplo, si más adelante se quisiera cambiar la forma en que se muestra el 
 
 ## INSTALACIÓN DEL PROYECTO
 
-Para ejecutar el proyecto, primero se deben instalar las dependencias con: npm install
+Para ejecutar el proyecto, primero se deben instalar las dependencias con: `npm install`
 
 ## EJECUCIÓN DEL PROYECTO
 
-Para iniciar la aplicación, se debe ejecutar: npm start
-Al ejecutar el programa, se mostrará el mensaje: Hola Mundo
+Para iniciar la aplicación, se debe ejecutar: `npm start`
+Al ejecutar el programa, se mostrará el mensaje: `Hola Mundo`
 
 ## CONCLUSIÓN
 
