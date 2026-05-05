@@ -30,7 +30,7 @@ Desde aquí parte la ejecución del programa y se llama a la interfaz para que s
 
 ## FLUJO DE EJECUCIÓN
 
-El flujo del programa sería el siguiente: index.js->interfaces/holaInterfaz.js->application/holaApp.js->domain/holaDominio.js->Hola Mundo
+El flujo del programa sería el siguiente: `index.js->interfaces/holaInterfaz.js->application/holaApp.js->domain/holaDominio.js->Hola Mundo`
 Primero se ejecuta index.js, luego se llama a la interfaz, después a la capa de aplicación y finalmente se obtiene el mensaje desde el dominio.
 
 ## POR QUÉ USAR ESTA ESTRUCTURA?
