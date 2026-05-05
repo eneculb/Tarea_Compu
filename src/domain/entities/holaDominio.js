@@ -1,11 +1,9 @@
-class Holadominio {
-  constructor(men) {
-    this.men = men;
+class Saludo {
+  constructor(nombre) {
+    this.nombre = nombre;
   }
-
-  getMen() {
-    return this.men;
+  obtenerMensaje() {
+    return `¡Hola Mundo desde ${this.nombre}!`;
   }
 }
-
-module.exports = Holadominio;
+module.exports = Saludo;

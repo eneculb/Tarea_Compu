@@ -1,10 +1,8 @@
-const Holadominio = require('../../domain/entities/holaDominio');
-
-class holaApp {
-  execute() {
-    const holadominio = new Holadominio('Hola Mundo');
-    return holadominio.getMen();
+const Saludo = require('../../domain/entities/holaDominio');
+class ObtenerSaludo {
+  ejecutar(nombre) {
+    const saludo = new Saludo(nombre);
+    return saludo.obtenerMensaje();
   }
 }
-
-module.exports = holaApp;
+module.exports = ObtenerSaludo;
