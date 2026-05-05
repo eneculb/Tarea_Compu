@@ -11,7 +11,7 @@ En palabras simples, el dominio debería funcionar por sí solo, sin importar c�
 
 ## EXPLICACIÓN DE CARPETAS
 
-### - domain/
+### * domain/
 La carpeta domain contiene la parte principal del sistema.
 En este caso, ahí está el archivo `holaDominio.js`, que se encarga de definir el mensaje que se va a mostrar.
 Esta capa sería la más interna de la arquitectura, por lo mismo no debería depender de las otras carpetas.
